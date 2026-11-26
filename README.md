@@ -1,9 +1,9 @@
-AI JOB SIMULATOR
+# AI JOB SIMULATOR
 
 An app built built for practicing real-life workplace scenarios. Pick a field, and a role and communicate with an AI manager/client across three realistic scenarios and get a detailed evaluated performance report. 
 This app is built to keep working even when the AI is unavailable. Every AI call goes through a provider chain with cooldowns, and a built-in offline engine produces follow-up questions and the full report if every provider fails or runs out of quota.
 
-KEY FEATURES:
+# KEY FEATURES:
 1. EXCLUSIVITY : 12 ROLES IN 3 CAREER FIELD:
    
    •TECHNOLOGY - Software Developer, Data Analyst, QA Engineer, Cybersecurity Analyst
@@ -20,7 +20,7 @@ KEY FEATURES:
 
 6. GUARDRAILS - If an answer provided by the user is too short to be evaluated, the AI reads a warning message that asks user to provide a relevant answer.
 
-REQUIREMENTS - 
+# REQUIREMENTS - 
 
 1. Python 3.9+
    
@@ -30,7 +30,7 @@ REQUIREMENTS -
    
 4. Requests (only if you use Groq)
 
-TECHNOLOGY USED - 
+# TECHNOLOGY USED - 
 
 1. Python - Main programming language
    
@@ -46,7 +46,7 @@ TECHNOLOGY USED -
     
 7. Python standard library: re, json, os, html, time and datetime.
 
-AREAS OF SKILL
+# AREAS OF SKILL
 
 1. LLM application development
    
@@ -116,15 +116,19 @@ AREAS OF SKILL
 
 •Defensive parsing and normalization of AI output against a fallback.
 
-CUSTOMIZING - 
+# CUSTOMIZING - 
 
 Add a scenario or role: edit SCENARIOS using the S(title, opening, question, pressure_points) helper. Each role should have exactly 3 scenarios, because the progress counter assumes 9 questions. To add a new role, also add its keywords to ROLE_KEYWORDS so the offline engine can score it.
 
 Change the look: edit THEME_CSS. The styles target Streamlit's internal data-testid attributes, which may change between Streamlit versions.
 
-LIMITATIONS - 
+# LIMITATIONS - 
 
 •Offline evaluation is keyword-based and can be gamed.
+
+# DISCLAIMER
+
+This project is for informational and educational purposes only. 
 
 •Answer validation checks length only, not relevance, so a long but off-topic answer is accepted and left for the evaluation to score low.
 
